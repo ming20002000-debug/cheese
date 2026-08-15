@@ -56,9 +56,9 @@
     const crossCount = Math.min(females.length, males.length);
     const matches = [];
 
+    // 여돌 vs 남돌 매칭에서는 항상 왼쪽 = 여돌, 오른쪽 = 남돌로 고정합니다.
     for (let i = 0; i < crossCount; i++) {
-      const pair = shuffle([females[i], males[i]]);
-      matches.push({ left: pair[0], right: pair[1], sameGender: false });
+      matches.push({ left: females[i], right: males[i], sameGender: false });
     }
 
     // 둘 중 더 많이 남은 쪽(동성끼리 붙어야 하는 인원)
