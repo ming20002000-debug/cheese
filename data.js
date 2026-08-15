@@ -13,8 +13,7 @@
 //               예) https://www.youtube.com/watch?v=dQw4w9WgXcQ  ->  dQw4w9WgXcQ
 //   start     : 영상이 몇 초부터 재생될지 (직캠 하이라이트 구간부터 보여주고 싶을 때 사용, 기본 0)
 //
-// 여돌 32명 + 남돌 33명 (64강까지 선택 가능 — 더 적은 쪽인 여돌 32명 기준).
-// 요청하신 대로 엠넷(M Countdown / MPD직캠·입덕직캠) 소스는 전부 빼고,
+// 엠넷(M Countdown / MPD직캠·입덕직캠) 소스와 팬사인회 직캠은 전부 빼고,
 // SBS 인기가요(안방1열), KBS 뮤직뱅크(K-Fancam), MBC(가요대제전/예능연구소),
 // JTBC(K-909), 팬미팅·콘서트·개인 채널 직캠 등 다른 소스로만 채웠습니다.
 // ============================================================
@@ -23,7 +22,7 @@ const CANDIDATES = [
   // ---- 여돌 (female) ----
   { id: "f01", name: "장원영", group: "IVE", gender: "female", youtubeId: "l9srwSYo3pk", start: 0 },
   { id: "f02", name: "안유진", group: "IVE", gender: "female", youtubeId: "u0aLZOX-NL0", start: 0 },
-  { id: "f03", name: "리즈", group: "IVE", gender: "female", youtubeId: "_raXYiNzFc8", start: 0 },
+  { id: "f03", name: "리즈", group: "IVE", gender: "female", youtubeId: "aM3Xl328jaE", start: 0 },
   { id: "f04", name: "가을", group: "IVE", gender: "female", youtubeId: "UiYUVhsBraM", start: 0 },
   { id: "f05", name: "레이", group: "IVE", gender: "female", youtubeId: "UYCWB9S0K-Y", start: 0 },
   { id: "f06", name: "이서", group: "IVE", gender: "female", youtubeId: "oIBqzSLxDSA", start: 0 },
@@ -45,7 +44,7 @@ const CANDIDATES = [
   { id: "f22", name: "소연", group: "(여자)아이들", gender: "female", youtubeId: "fjyAU6qcQtk", start: 0 },
   { id: "f23", name: "우기", group: "(여자)아이들", gender: "female", youtubeId: "ZbZDaP5zDXg", start: 0 },
   { id: "f24", name: "슈화", group: "(여자)아이들", gender: "female", youtubeId: "PFsUf9wXqXY", start: 0 },
-  { id: "f25", name: "민니", group: "(여자)아이들", gender: "female", youtubeId: "OUr4zLOT2vE", start: 0 },
+  { id: "f25", name: "민니", group: "(여자)아이들", gender: "female", youtubeId: "GjLc2z8z3nA", start: 0 },
   { id: "f26", name: "수민", group: "STAYC", gender: "female", youtubeId: "c8nOUWhpD8w", start: 0 },
   { id: "f27", name: "시은", group: "STAYC", gender: "female", youtubeId: "SsAPQ2UHX2I", start: 0 },
   { id: "f28", name: "아이사", group: "STAYC", gender: "female", youtubeId: "U9Q6sAmRs44", start: 0 },
@@ -53,6 +52,8 @@ const CANDIDATES = [
   { id: "f30", name: "윤", group: "STAYC", gender: "female", youtubeId: "pabFd9RlpP8", start: 0 },
   { id: "f31", name: "설윤", group: "NMIXX", gender: "female", youtubeId: "6_tZq4WcyAg", start: 0 },
   { id: "f32", name: "배이", group: "NMIXX", gender: "female", youtubeId: "TbU3_uhlNZo", start: 0 },
+  { id: "f33", name: "사나", group: "TWICE", gender: "female", youtubeId: "jNGuk59UWeI", start: 0 },
+  { id: "f34", name: "로제", group: "BLACKPINK", gender: "female", youtubeId: "rd-nlloznQQ", start: 0 },
 
   // ---- 남돌 (male) ----
   { id: "m01", name: "호시", group: "SEVENTEEN", gender: "male", youtubeId: "Yx7nAhrHILs", start: 0 },
@@ -82,10 +83,11 @@ const CANDIDATES = [
   { id: "m25", name: "제이", group: "ENHYPEN", gender: "male", youtubeId: "6BMkulC2oSA", start: 0 },
   { id: "m26", name: "성훈", group: "ENHYPEN", gender: "male", youtubeId: "CNLez_646VA", start: 0 },
   { id: "m27", name: "정원", group: "ENHYPEN", gender: "male", youtubeId: "HeNNnWpI6Zk", start: 0 },
-  { id: "m28", name: "희승", group: "ENHYPEN", gender: "male", youtubeId: "Kqv8IqUFmus", start: 0 },
+  { id: "m28", name: "희승", group: "ENHYPEN", gender: "male", youtubeId: "Y61jyfDyZEU", start: 0 },
   { id: "m29", name: "선우", group: "ENHYPEN", gender: "male", youtubeId: "g6vGDvFdR20", start: 0 },
   { id: "m30", name: "승한", group: "RIIZE", gender: "male", youtubeId: "frDaZ14G1kg", start: 0 },
   { id: "m31", name: "원빈", group: "RIIZE", gender: "male", youtubeId: "bqlXsBGHML0", start: 0 },
   { id: "m32", name: "소희", group: "RIIZE", gender: "male", youtubeId: "T8IKN9jSnEc", start: 0 },
   { id: "m33", name: "정국", group: "BTS", gender: "male", youtubeId: "D87u-gkemxc", start: 17 },
+  { id: "m34", name: "정국", group: "BTS", gender: "male", youtubeId: "tMlcFYPkY3c", start: 0 },
 ];
