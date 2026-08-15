@@ -90,5 +90,5 @@ const CANDIDATES = [
   { id: "m31", name: "원빈", group: "RIIZE", gender: "male", youtubeId: "3rK8VbJMd9Y", start: 0 },
   { id: "m32", name: "소희", group: "RIIZE", gender: "male", youtubeId: "Oob3ukvKigA", start: 0 },
   { id: "m33", name: "정국", group: "BTS", gender: "male", youtubeId: "syfbGRZMxTY", start: 0 },
-  { id: "m34", name: "정국", group: "BTS", gender: "male", youtubeId: "kEEp2qszfl0", start: 0 },
+  { id: "m34", name: "정국", group: "BTS", gender: "male", youtubeId: "_hz5DdNp8is", start: 0 },
 ];
