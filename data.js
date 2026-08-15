@@ -69,7 +69,7 @@ const CANDIDATES = [
   { id: "m10", name: "리노", group: "Stray Kids", gender: "male", youtubeId: "t5ruBWG2JMI", start: 0 },
   { id: "m11", name: "승민", group: "Stray Kids", gender: "male", youtubeId: "sih66_A2UIA", start: 0 },
   { id: "m12", name: "아이엔", group: "Stray Kids", gender: "male", youtubeId: "vvJgT5rYOY4", start: 0 },
-  { id: "m13", name: "산", group: "ATEEZ", gender: "male", youtubeId: "mhaCn_pyesU", start: 0 },
+  { id: "m13", name: "산", group: "ATEEZ", gender: "male", youtubeId: "Wnn9lPBXchs", start: 0 },
   { id: "m14", name: "우영", group: "ATEEZ", gender: "male", youtubeId: "rm3OPqF3P5E", start: 0 },
   { id: "m15", name: "여상", group: "ATEEZ", gender: "male", youtubeId: "1CImABG3uTs", start: 0 },
   { id: "m16", name: "윤호", group: "ATEEZ", gender: "male", youtubeId: "x9alOTNO8RE", start: 0 },
@@ -89,6 +89,6 @@ const CANDIDATES = [
   { id: "m30", name: "승한", group: "RIIZE", gender: "male", youtubeId: "UQ_xkbJB7Dw", start: 0 },
   { id: "m31", name: "원빈", group: "RIIZE", gender: "male", youtubeId: "3rK8VbJMd9Y", start: 0 },
   { id: "m32", name: "소희", group: "RIIZE", gender: "male", youtubeId: "Oob3ukvKigA", start: 0 },
-  { id: "m33", name: "정국", group: "BTS", gender: "male", youtubeId: "D87u-gkemxc", start: 17 },
-  { id: "m34", name: "정국", group: "BTS", gender: "male", youtubeId: "tMlcFYPkY3c", start: 0 },
+  { id: "m33", name: "정국", group: "BTS", gender: "male", youtubeId: "syfbGRZMxTY", start: 0 },
+  { id: "m34", name: "정국", group: "BTS", gender: "male", youtubeId: "kEEp2qszfl0", start: 0 },
 ];
