@@ -13,10 +13,11 @@
 //               예) https://www.youtube.com/watch?v=dQw4w9WgXcQ  ->  dQw4w9WgXcQ
 //   start     : 영상이 몇 초부터 재생될지 (직캠 하이라이트 구간부터 보여주고 싶을 때 사용, 기본 0)
 //
-// 엠넷(M Countdown / MPD직캠·입덕직캠), 팬사인회 직캠, 그리고 방송사 공식 음악방송
-// 채널(SBS 인기가요/안방1열, KBS 뮤직뱅크/K-Fancam, MBC 가요대제전·예능연구소,
-// JTBC K-909 등) 소스는 전부 빼고, 대학교 축제·콘서트·팬미팅·뮤직페스티벌·개인 채널
-// 직캠 등 "비공식" 소스로만 채웠습니다.
+// 엠넷(M Countdown / MPD직캠·입덕직캠), 팬사인회 직캠, 팬미팅/미니팬미팅,
+// 그리고 방송사 공식 음악방송·연말 가요제 채널(SBS 인기가요/안방1열/가요대전,
+// KBS 뮤직뱅크/K-Fancam/가요대축제, MBC 가요대제전·예능연구소, JTBC K-909 등)
+// 소스는 전부 빼고, 대학교 축제·콘서트·팬콘서트(위버스콘 등)·뮤직페스티벌·개인 채널
+// 직캠 등 "비공식" 소스로만, 그것도 춤 위주 풀샷 직캠으로만 채웠습니다.
 // ============================================================
 
 const CANDIDATES = [
@@ -61,7 +62,7 @@ const CANDIDATES = [
 
   // ---- 남돌 (male) ----
   { id: "m01", name: "성현", group: "CORTIS", gender: "male", youtubeId: "2KvuPjrz2Js", start: 0 },
-  { id: "m02", name: "민규", group: "SEVENTEEN", gender: "male", youtubeId: "HP_VsgOXdgI", start: 0 },
+  { id: "m02", name: "민규", group: "SEVENTEEN", gender: "male", youtubeId: "5x_a2xqDwnE", start: 0 },
   { id: "m03", name: "도겸", group: "SEVENTEEN", gender: "male", youtubeId: "49wOLt8NukQ", start: 0 },
   { id: "m04", name: "건호", group: "CORTIS", gender: "male", youtubeId: "zASwV4Gyjb0", start: 0 },
   { id: "m05", name: "승관", group: "SEVENTEEN", gender: "male", youtubeId: "HG7g1jKDU4E", start: 0 },
@@ -83,7 +84,7 @@ const CANDIDATES = [
   { id: "m21", name: "범규", group: "TXT", gender: "male", youtubeId: "jKWbJrk7PNE", start: 0 },
   { id: "m22", name: "태현", group: "TXT", gender: "male", youtubeId: "s7tJacupTdc", start: 0 },
   { id: "m23", name: "태산", group: "BOYNEXTDOOR", gender: "male", youtubeId: "fjHmmWYlIuA", start: 0 },
-  { id: "m24", name: "니키", group: "ENHYPEN", gender: "male", youtubeId: "tjmJ0RXALuc", start: 0 },
+  { id: "m24", name: "니키", group: "ENHYPEN", gender: "male", youtubeId: "fIb4N_rRKnM", start: 0 },
   { id: "m25", name: "제이", group: "ENHYPEN", gender: "male", youtubeId: "tdRYBMwWBXA", start: 0 },
   { id: "m26", name: "성훈", group: "ENHYPEN", gender: "male", youtubeId: "WnqoRMoj8Tk", start: 0 },
   { id: "m27", name: "정원", group: "ENHYPEN", gender: "male", youtubeId: "0ks-KJ06c2o", start: 0 },
