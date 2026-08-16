@@ -24,7 +24,7 @@
 const CANDIDATES = [
   // ---- 여돌 (female) ----
   { id: "f01", name: "장원영", group: "IVE", gender: "female", youtubeId: "l9srwSYo3pk", start: 0 },
-  { id: "f02", name: "안유진", group: "IVE", gender: "female", youtubeId: "u0aLZOX-NL0", start: 0 },
+  { id: "f02", name: "안유진", group: "IVE", gender: "female", youtubeId: "JGprvwS36WY", start: 0 },
   { id: "f03", name: "리즈", group: "IVE", gender: "female", youtubeId: "R-Gca6PZewM", start: 0 },
   { id: "f04", name: "가을", group: "IVE", gender: "female", youtubeId: "UiYUVhsBraM", start: 0 },
   { id: "f05", name: "레이", group: "IVE", gender: "female", youtubeId: "IvXOC2BQlzk", start: 0 },
@@ -53,8 +53,8 @@ const CANDIDATES = [
   { id: "f28", name: "아이사", group: "STAYC", gender: "female", youtubeId: "VWcnF2RrAuY", start: 0 },
   { id: "f29", name: "세은", group: "STAYC", gender: "female", youtubeId: "mWh2bAT-DOM", start: 0 },
   { id: "f30", name: "윤", group: "STAYC", gender: "female", youtubeId: "LPx5ikK6alY", start: 0 },
-  { id: "f31", name: "설윤", group: "NMIXX", gender: "female", youtubeId: "gxVhPwg7iDw", start: 0 },
-  { id: "f32", name: "배이", group: "NMIXX", gender: "female", youtubeId: "d1nXrRnHaBo", start: 0 },
+  { id: "f31", name: "설윤", group: "NMIXX", gender: "female", youtubeId: "TBo-P-zz6bI", start: 0 },
+  { id: "f32", name: "배이", group: "NMIXX", gender: "female", youtubeId: "4e8HmFAl7x8", start: 0 },
   { id: "f33", name: "사나", group: "TWICE", gender: "female", youtubeId: "44r6ROjc9dY", start: 0 },
   { id: "f34", name: "아현", group: "BABYMONSTER", gender: "female", youtubeId: "GLgaTC2AF0g", start: 0 },
   { id: "f35", name: "권은비", group: "SOLO", gender: "female", youtubeId: "CfwQ2fe7LH0", start: 0 },
@@ -62,7 +62,7 @@ const CANDIDATES = [
   { id: "f37", name: "최예나", group: "SOLO", gender: "female", youtubeId: "6cZ7hpFJ8XM", start: 0 },
 
   // ---- 남돌 (male) ----
-  { id: "m01", name: "성현", group: "CORTIS", gender: "male", youtubeId: "9jegttnJ0xI", start: 0 },
+  { id: "m01", name: "김지웅", group: "ZEROBASEONE", gender: "male", youtubeId: "bdFS_oUmGh0", start: 0 },
   { id: "m02", name: "민규", group: "SEVENTEEN", gender: "male", youtubeId: "pG1suajo1qM", start: 0 },
   { id: "m03", name: "도겸", group: "SEVENTEEN", gender: "male", youtubeId: "49wOLt8NukQ", start: 0 },
   { id: "m04", name: "건호", group: "CORTIS", gender: "male", youtubeId: "zASwV4Gyjb0", start: 0 },
