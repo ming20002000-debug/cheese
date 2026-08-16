@@ -14,10 +14,11 @@
 //   start     : 영상이 몇 초부터 재생될지 (직캠 하이라이트 구간부터 보여주고 싶을 때 사용, 기본 0)
 //
 // 엠넷(M Countdown / MPD직캠·입덕직캠), 팬사인회 직캠, 팬미팅/미니팬미팅,
-// 그리고 방송사 공식 음악방송·연말 가요제 채널(SBS 인기가요/안방1열/가요대전,
-// KBS 뮤직뱅크/K-Fancam/가요대축제, MBC 가요대제전·예능연구소, JTBC K-909 등)
-// 소스는 전부 빼고, 대학교 축제·콘서트·팬콘서트(위버스콘 등)·뮤직페스티벌·개인 채널
-// 직캠 등 "비공식" 소스로만, 그것도 춤 위주 풀샷 직캠으로만 채웠습니다.
+// 대학교 축제 직캠, 그리고 방송사 공식 음악방송·연말 가요제 채널(SBS 인기가요/
+// 안방1열/가요대전, KBS 뮤직뱅크/K-Fancam/가요대축제, MBC 가요대제전·예능연구소,
+// JTBC K-909 등) 소스는 전부 빼고, 그룹 자체 콘서트/월드투어·팬콘서트(위버스콘 등)·
+// 코첼라/콤플렉스콘 같은 대형 뮤직페스티벌 직캠 등 "비공식" 소스로만,
+// 그것도 춤 위주 풀샷 직캠으로만 채웠습니다.
 // ============================================================
 
 const CANDIDATES = [
@@ -32,7 +33,7 @@ const CANDIDATES = [
   { id: "f08", name: "하니", group: "NewJeans", gender: "female", youtubeId: "MVdLV3PUk00", start: 0 },
   { id: "f09", name: "다니엘", group: "NewJeans", gender: "female", youtubeId: "2NsxQm9NFv4", start: 0 },
   { id: "f10", name: "해린", group: "NewJeans", gender: "female", youtubeId: "4vFY26vTpxw", start: 0 },
-  { id: "f11", name: "혜인", group: "NewJeans", gender: "female", youtubeId: "RrgRkMCr3MI", start: 0 },
+  { id: "f11", name: "예지", group: "ITZY", gender: "female", youtubeId: "kh9i40Oo7dc", start: 0 },
   { id: "f12", name: "카리나", group: "aespa", gender: "female", youtubeId: "3NSjQWShlPs", start: 0 },
   { id: "f13", name: "지젤", group: "aespa", gender: "female", youtubeId: "RrB145feSs4", start: 0 },
   { id: "f14", name: "윈터", group: "aespa", gender: "female", youtubeId: "Ot0mCaycFBw", start: 0 },
@@ -61,24 +62,24 @@ const CANDIDATES = [
   { id: "f37", name: "최예나", group: "SOLO", gender: "female", youtubeId: "6cZ7hpFJ8XM", start: 0 },
 
   // ---- 남돌 (male) ----
-  { id: "m01", name: "성현", group: "CORTIS", gender: "male", youtubeId: "RTjjwZsBw8w", start: 0 },
-  { id: "m02", name: "민규", group: "SEVENTEEN", gender: "male", youtubeId: "wZEFIhe0aD4", start: 0 },
+  { id: "m01", name: "성현", group: "CORTIS", gender: "male", youtubeId: "FiLViKJCJMU", start: 0 },
+  { id: "m02", name: "민규", group: "SEVENTEEN", gender: "male", youtubeId: "pG1suajo1qM", start: 0 },
   { id: "m03", name: "도겸", group: "SEVENTEEN", gender: "male", youtubeId: "49wOLt8NukQ", start: 0 },
   { id: "m04", name: "건호", group: "CORTIS", gender: "male", youtubeId: "zASwV4Gyjb0", start: 0 },
   { id: "m05", name: "승관", group: "SEVENTEEN", gender: "male", youtubeId: "63cdMuzHGeo", start: 0 },
-  { id: "m06", name: "우지", group: "SEVENTEEN", gender: "male", youtubeId: "r_J-Q835HD8", start: 0 },
+  { id: "m06", name: "우지", group: "SEVENTEEN", gender: "male", youtubeId: "PlpDU3xKFWI", start: 0 },
   { id: "m07", name: "현진", group: "Stray Kids", gender: "male", youtubeId: "LnwOgkjAetM", start: 0 },
   { id: "m08", name: "필릭스", group: "Stray Kids", gender: "male", youtubeId: "WLDwJ14a9Dw", start: 0 },
   { id: "m09", name: "방찬", group: "Stray Kids", gender: "male", youtubeId: "pv1RKntil7Q", start: 0 },
   { id: "m10", name: "리노", group: "Stray Kids", gender: "male", youtubeId: "3CJAlqUw0Pc", start: 0 },
-  { id: "m11", name: "승민", group: "Stray Kids", gender: "male", youtubeId: "Sm5zvhJck1s", start: 0 },
+  { id: "m11", name: "승민", group: "Stray Kids", gender: "male", youtubeId: "cdqcIikPBQg", start: 0 },
   { id: "m12", name: "아이엔", group: "Stray Kids", gender: "male", youtubeId: "vvJgT5rYOY4", start: 0 },
   { id: "m13", name: "산", group: "ATEEZ", gender: "male", youtubeId: "Wnn9lPBXchs", start: 0 },
   { id: "m14", name: "우영", group: "ATEEZ", gender: "male", youtubeId: "WosbWEa_h9E", start: 0 },
   { id: "m15", name: "준규", group: "TREASURE", gender: "male", youtubeId: "J8hs3NfFcRw", start: 0 },
-  { id: "m16", name: "윤호", group: "ATEEZ", gender: "male", youtubeId: "_YdaOPyV1dc", start: 0 },
+  { id: "m16", name: "윤호", group: "ATEEZ", gender: "male", youtubeId: "-JJXyQHY9vs", start: 0 },
   { id: "m17", name: "홍중", group: "ATEEZ", gender: "male", youtubeId: "ei6hd8h-l2I", start: 0 },
-  { id: "m18", name: "민기", group: "ATEEZ", gender: "male", youtubeId: "gbQ2ib1D5T0", start: 0 },
+  { id: "m18", name: "민기", group: "ATEEZ", gender: "male", youtubeId: "yIy4dwvvb8Q", start: 0 },
   { id: "m19", name: "수빈", group: "TXT", gender: "male", youtubeId: "b5jEFLf1S9E", start: 0 },
   { id: "m20", name: "연준", group: "TXT", gender: "male", youtubeId: "KmfZYKINzgc", start: 0 },
   { id: "m21", name: "범규", group: "TXT", gender: "male", youtubeId: "jKWbJrk7PNE", start: 0 },
@@ -93,7 +94,7 @@ const CANDIDATES = [
   { id: "m30", name: "승한", group: "RIIZE", gender: "male", youtubeId: "UQ_xkbJB7Dw", start: 0 },
   { id: "m31", name: "원빈", group: "RIIZE", gender: "male", youtubeId: "TkaTJ0eSmyE", start: 0 },
   { id: "m32", name: "명재현", group: "BOYNEXTDOOR", gender: "male", youtubeId: "nsEQpEdEgzY", start: 0 },
-  { id: "m33", name: "정국", group: "BTS", gender: "male", youtubeId: "gmuQzTYqsOM", start: 0 },
+  { id: "m33", name: "정국", group: "BTS", gender: "male", youtubeId: "I-D30v0CgEQ", start: 0 },
   { id: "m34", name: "정국", group: "BTS", gender: "male", youtubeId: "_hz5DdNp8is", start: 0 },
   { id: "m35", name: "이상원", group: "ALPHA DRIVE ONE", gender: "male", youtubeId: "yqQ8Tc83aRY", start: 0 },
   { id: "m36", name: "앤톤", group: "RIIZE", gender: "male", youtubeId: "_qz9uOc_ee0", start: 0 },
