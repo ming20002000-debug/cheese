@@ -55,6 +55,9 @@ const CANDIDATES = [
   { id: "f32", name: "배이", group: "NMIXX", gender: "female", youtubeId: "d1nXrRnHaBo", start: 0 },
   { id: "f33", name: "사나", group: "TWICE", gender: "female", youtubeId: "jNGuk59UWeI", start: 0 },
   { id: "f34", name: "로제", group: "BLACKPINK", gender: "female", youtubeId: "rd-nlloznQQ", start: 0 },
+  { id: "f35", name: "권은비", group: "SOLO", gender: "female", youtubeId: "CfwQ2fe7LH0", start: 0 },
+  { id: "f36", name: "다영", group: "LIGHTSUM", gender: "female", youtubeId: "LXsBBQ8MLFo", start: 0 },
+  { id: "f37", name: "최예나", group: "SOLO", gender: "female", youtubeId: "6cZ7hpFJ8XM", start: 0 },
 
   // ---- 남돌 (male) ----
   { id: "m01", name: "성현", group: "CORTIS", gender: "male", youtubeId: "VDJygybzK2A", start: 0 },
@@ -91,4 +94,6 @@ const CANDIDATES = [
   { id: "m32", name: "명재현", group: "BOYNEXTDOOR", gender: "male", youtubeId: "ZLB3paDdk60", start: 0 },
   { id: "m33", name: "정국", group: "BTS", gender: "male", youtubeId: "syfbGRZMxTY", start: 0 },
   { id: "m34", name: "정국", group: "BTS", gender: "male", youtubeId: "_hz5DdNp8is", start: 0 },
+  { id: "m35", name: "이상원", group: "ALPHA DRIVE ONE", gender: "male", youtubeId: "yqQ8Tc83aRY", start: 0 },
+  { id: "m36", name: "앤톤", group: "RIIZE", gender: "male", youtubeId: "_qz9uOc_ee0", start: 0 },
 ];
