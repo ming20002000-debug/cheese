@@ -54,7 +54,7 @@ const CANDIDATES = [
   { id: "f29", name: "세은", group: "STAYC", gender: "female", youtubeId: "mWh2bAT-DOM", start: 0 },
   { id: "f30", name: "윤", group: "STAYC", gender: "female", youtubeId: "LPx5ikK6alY", start: 0 },
   { id: "f31", name: "설윤", group: "NMIXX", gender: "female", youtubeId: "TBo-P-zz6bI", start: 0 },
-  { id: "f32", name: "배이", group: "NMIXX", gender: "female", youtubeId: "4e8HmFAl7x8", start: 0 },
+  { id: "f32", name: "배이", group: "NMIXX", gender: "female", youtubeId: "Kw5uApOw4uE", start: 0 },
   { id: "f33", name: "사나", group: "TWICE", gender: "female", youtubeId: "44r6ROjc9dY", start: 0 },
   { id: "f34", name: "아현", group: "BABYMONSTER", gender: "female", youtubeId: "GLgaTC2AF0g", start: 0 },
   { id: "f35", name: "권은비", group: "SOLO", gender: "female", youtubeId: "CfwQ2fe7LH0", start: 0 },
